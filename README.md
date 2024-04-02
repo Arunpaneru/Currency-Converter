@@ -29,5 +29,3 @@ This project is simple currency converter application built using React.It allow
 
 link: https://github.com/fawazahmed0/exchange-api
 
-![alt text](<Screenshot (20).png>) 
-![alt text](currencyapp.png)
