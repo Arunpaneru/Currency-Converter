@@ -13,6 +13,7 @@ function App() {
   const currencyInfo = useCurrencyInfo(from)
 
   const options = Object.keys(currencyInfo)
+  
 
   const swap = () => {
     setFrom(to)
@@ -23,6 +24,12 @@ function App() {
   
   const convert = () => {
     setConvertedAmount(amount * currencyInfo[to])
+  }
+  const Clear = () => {
+setAmount(0)
+setConvertedAmount(0)
+setFrom("usd")
+setTo("npr")
   }
 
   return (
@@ -73,9 +80,11 @@ function App() {
                     <button type="submit" className="bg-button_bg1 w-full text-white px-4 py-3 rounded-lg">
                         Convert {from.toUpperCase()} to {to.toUpperCase()}
                     </button>
-              
 
                 </form>
+
+                <button className='w-full shadow-sm bg-slate-500 text-white mt-2 p-2 rounded' onClick={Clear}>Clear</button>
+
             </div>
         </div>
     </div>
