@@ -83,7 +83,7 @@ setTo("npr")
 
                 </form>
 
-                <button className='w-full shadow-sm bg-slate-500 text-white mt-2 p-2 rounded' onClick={Clear}>Clear</button>
+                <button className='w-full hadow-sm bg-slate-500 text-white mt-2 p-2 rounded' onClick={Clear}>Clear</button>
 
             </div>
         </div>
